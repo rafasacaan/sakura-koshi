@@ -1,0 +1,321 @@
+/* Sakura Koshi
+ * ================
+ * Inspired and made to complement Sakura.css v1.5.0
+ * which can be found on https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
+  
+  body {
+    font-size: 1.8rem;
+    line-height: 1.618;
+    max-width: 38em;
+    margin: auto;
+    color: #4a4a4a;
+    background-color: #f9f9f9;
+    padding: 13px;
+  }
+  
+  @media (max-width: 684px) {
+    body {
+      font-size: 1.53rem;
+    }
+  }
+  @media (max-width: 382px) {
+    body {
+      font-size: 1.35rem;
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
+  
+  h1 {
+    font-size: 2.35em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+  }
+  
+  h4 {
+    font-size: 1.5em;
+  }
+  
+  h5 {
+    font-size: 1.25em;
+  }
+  
+  h6 {
+    font-size: 1em;
+  }
+  
+  p {
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+  }
+  
+  small, sub, sup {
+    font-size: 75%;
+  }
+  
+  hr {
+    border-color: #1d7484;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1d7484;
+  }
+  a:visited {
+    color: #144f5a;
+  }
+  a:hover {
+    color: #982c61;
+    border-bottom: 2px solid #4a4a4a;
+  }
+  
+  ul {
+    padding-left: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.4em;
+  }
+  
+  blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 0.8em;
+    border-left: 5px solid #1d7484;
+    margin-bottom: 2.5rem;
+    background-color: #f1f1f1;
+  }
+  
+  blockquote p {
+    margin-bottom: 0;
+  }
+  
+  img, video {
+    height: auto;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Pre and Code */
+  pre {
+    /* background-color: #f1f1f1; */
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+    font-size: 0.9em;
+  }
+  
+  code, kbd, samp {
+    font-size: 0.9em;
+    padding: 0 0.5em;
+    background-color: #f1f1f1;
+    white-space: pre-wrap;
+  }
+  
+  pre > code {
+    padding: 0;
+    background-color: transparent;
+    white-space: pre;
+    font-size: 1em;
+  }
+  
+  /* Tables */
+  table {
+    text-align: justify;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  td, th {
+    padding: 0.5em;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  /* Buttons, forms and input */
+  input, textarea {
+    border: 1px solid #4a4a4a;
+  }
+  input:focus, textarea:focus {
+    border: 1px solid #1d7484;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  .button, button, input[type=submit], input[type=reset], input[type=button], input[type=file]::file-selector-button {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #1d7484;
+    color: #f9f9f9;
+    border-radius: 1px;
+    border: 1px solid #1d7484;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled], input[type=file]::file-selector-button[disabled] {
+    cursor: default;
+    opacity: 0.5;
+  }
+  .button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, input[type=file]::file-selector-button:hover {
+    background-color: #982c61;
+    color: #f9f9f9;
+    outline: 0;
+  }
+  .button:focus-visible, button:focus-visible, input[type=submit]:focus-visible, input[type=reset]:focus-visible, input[type=button]:focus-visible, input[type=file]::file-selector-button:focus-visible {
+    outline-style: solid;
+    outline-width: 2px;
+  }
+  
+  textarea, select, input {
+    color: #4a4a4a;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  textarea:focus, select:focus, input:focus {
+    border: 1px solid #1d7484;
+    outline: 0;
+  }
+  
+  input[type=checkbox]:focus {
+    outline: 1px dotted #1d7484;
+  }
+  
+  label, legend, fieldset {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  /* Grid Extension */
+  /* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Grid Row */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+/* Grid Columns */
+.col {
+  flex: 1;
+  padding: 0.5rem;
+  min-width: 0; /* Prevents overflow */
+}
+
+/* Specific column sizes */
+.col-1 { flex: 0 0 8.33%; }
+.col-2 { flex: 0 0 16.66%; }
+.col-3 { flex: 0 0 25%; }
+.col-4 { flex: 0 0 33.33%; }
+.col-5 { flex: 0 0 41.66%; }
+.col-6 { flex: 0 0 50%; }
+.col-7 { flex: 0 0 58.33%; }
+.col-8 { flex: 0 0 66.66%; }
+.col-9 { flex: 0 0 75%; }
+.col-10 { flex: 0 0 83.33%; }
+.col-11 { flex: 0 0 91.66%; }
+.col-12 { flex: 0 0 100%; }
+
+/* Responsive breakpoints that match Sakura's default media queries */
+@media (max-width: 684px) {
+  .col {
+    flex: 0 0 100%;
+  }
+  
+  /* Stack all columns on mobile */
+  [class*="col-"] {
+    flex: 0 0 100%;
+  }
+}
+
+/* Grid gaps */
+.grid-gap-0 { gap: 0; }
+.grid-gap-1 { gap: 0.5rem; }
+.grid-gap-2 { gap: 1rem; }
+.grid-gap-3 { gap: 1.5rem; }
+
+/* Alignment utilities */
+.grid-center {
+  justify-content: center;
+}
+
+.grid-start {
+  justify-content: flex-start;
+}
+
+.grid-end {
+  justify-content: flex-end;
+}
+
+.grid-between {
+  justify-content: space-between;
+}
+
+.grid-around {
+  justify-content: space-around;
+}
+
+/* Vertical alignment */
+.grid-items-center {
+  align-items: center;
+}
+
+.grid-items-start {
+  align-items: flex-start;
+}
+
+.grid-items-end {
+  align-items: flex-end;
+}
+
+/* For nested grids */
+.grid .grid {
+  margin: 0;
+  width: 100%;
+}
